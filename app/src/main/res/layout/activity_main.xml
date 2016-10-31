@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c_while"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/top_margin">
+
+    <include layout="@layout/title_base" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <RelativeLayout
+            android:id="@+id/rl_phone_split"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/top_margin"
+            android:background="@drawable/rl_login_phone_top">
+
+            <TextView
+                android:id="@+id/tv_china_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="+86"
+                android:textColor="@color/c_txt_main"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/split_login_1"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/option_padding"
+                android:layout_toRightOf="@id/tv_china_code"
+                android:background="@color/split" />
+
+            <EditText
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/option_padding"
+                android:layout_toRightOf="@id/split_login_1"
+                android:background="@null"
+                android:hint="请输入您的手机号码"
+                android:inputType="phone"
+                android:textColor="@color/c_txt_main"
+                android:textColorHint="@color/c_txt_hint"
+                android:textSize="@dimen/txt_main" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_code"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/rl_login_phone_bottom">
+
+            <EditText
+                android:id="@+id/edt_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:hint="请输入收到的短信验证码"
+                android:inputType="number"
+                android:textColor="@color/c_txt_main"
+                android:textColorHint="@color/c_txt_hint"
+                android:textSize="@dimen/txt_main" />
+
+            <com.lgh.quicklogin_master.widget.CalculTimeButton
+                android:id="@+id/btn_getCode"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_normal"
+                android:clickable="true"
+                android:text="发送验证码"
+                android:textColor="@color/c_while"
+                android:textSize="@dimen/txt_pro" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bt_height_0"
+            android:layout_below="@id/rl_code"
+            android:layout_marginTop="@dimen/top_margin"
+            android:background="@drawable/btn_normal"
+            android:text="确认登录"
+            android:textColor="@color/c_while"
+            android:textSize="@dimen/bt_text" />
+
+    </RelativeLayout>
+
+</LinearLayout>

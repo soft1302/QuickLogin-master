@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="c_txt_pro">#7e7e7e</color>
+    <color name="c_txt_main">#333333</color>
+    <color name="c_txt_hint">#c9c9c9</color>
+
+    <color name="bt_select_0">#8fc31f</color>
+    <color name="bt_hint_0">#b3d465</color>
+    <color name="c_while">#ffffff</color>
+    <color name="split">#cfcfcf</color>
+</resources>
